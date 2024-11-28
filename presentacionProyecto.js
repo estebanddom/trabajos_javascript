@@ -9,11 +9,11 @@
 const prompt = require('prompt-sync')();
 
 // stock inicial
-let perfume = 100
-let jabones = 100
-
 let producto = prompt("Ingrese el producto (perfume, jabones):");
 let cantidad = parseInt(prompt("Ingrese la cantidad a vender:")); 
+
+let perfume = parseInt(prompt("Ingrese perfume"))
+let jabones = parseInt(prompt("Ingrese jabones"))
 
 if (producto === "perfume") {
     if (cantidad > perfume) {
@@ -26,9 +26,6 @@ if (producto === "perfume") {
             console.log('Advertencia: El inventario de perfumes está bajo.');
         }
         
-        if (perfume <= 0) {
-            console.log('No hay stock.');
-        }
     }
 } else if (producto === "jabones") {
     if (cantidad > jabones) {
@@ -41,9 +38,6 @@ if (producto === "perfume") {
             console.log('Advertencia: El inventario de jabones está bajo.');
         }
         
-        if (jabones <= 0) {
-            console.log('No hay stock.');
-        }
     }
 } else {
     console.log("Producto no válido. Intente con 'perfume' o 'jabones'.");

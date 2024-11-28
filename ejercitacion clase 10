@@ -1,0 +1,44 @@
+const prompt = require("prompt-sync")({ sigint: true});
+// ejercicio 1
+
+//let edad = 23;
+//let peso = 75;
+//console.log("Mi edad es : " + edad + ", y mi peso es de: " + peso);
+
+// ejercicio 2
+
+//let peso = prompt("Por favor, ingresa tu peso: ")
+//let edad = prompt("Por favor, ingresa tu edad: ")
+//let nombre = prompt("Por favor, ingresa tu nombre: ")
+
+// console.log("¡Hola!, me llamo:" + nombre + " y tengo: " + edad + " años. Mi peso es de: " + peso + "kg.");
+
+// const EDAD_MINIMA = 18
+//const EDAD_MAXIMA = 99
+
+//let edad = parseInt(prompt("Por favor, ingresa tu edad: "));
+//if (edad >= EDAD_MINIMA && edad <= EDAD_MAXIMA){
+//console.log("Edad dentro del rango permitido")
+//}
+//else{
+//    console.log("EDAD FUERA DEL RANGO PERMITIDO")
+//}
+
+let verdadero = true
+let texto = "Hola! soy un mensaje"
+let numero = 19 
+let nada = null
+let suma = numero + 1
+console.log("el resultado de esta suma: " + numero + " y 1 es igual a: " + suma)
+console.log( texto + " extenso")
+
+if (verdadero) {
+    console.log("la condicion verdadero: es true ")
+} else {
+    console.log("la condicion verdadero: es false")
+}
+if (nada === null) {
+    console.log("la variable: " + nada + " es null")
+} else {
+    console.log ("la variable nada no es nula"); 
+}
